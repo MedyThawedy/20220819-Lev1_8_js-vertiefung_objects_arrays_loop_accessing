@@ -39,5 +39,37 @@ function showObj() {
             console.log('name : ' + name, ' , age : ' + age, ', coop ' + coop + ', emails :' + emails[0] + ' : ' + emails[1]);
         }
     );
+    console.log('-----------------------------');
+    console.log('-----------------------------');
+    studentData.forEach(
+        ({ name, age, coop, address, emails }) => {
+            console.log('name : ' + name, ' , age : ' + age, ', coop ' + coop + ', emails :' + emails[0] + ' : ' + emails[1]);
+        }
+    );
+
+}
+
+console.log('-----------------------------');
+console.log('-----------------------------');
+
+function showSolution() {
+    console.log('-------------Map()----------------');
+    studentData.map(
+        ({ name, age, coop, address, emails }) => {
+            console.log('name : ' + name)
+            console.log('coop ' + coop);
+            console.log(emails);
+        }
+    );
+
+    console.log('--------------ForEach()---------------');
+    studentData.forEach(
+        ({ name, age, coop, address, emails }) => {
+            console.log('name : ' + name)
+            console.log('coop ' + coop);
+            console.log(emails);
+            console.log(address.city);
+        }
+    );
 
 }
