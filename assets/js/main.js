@@ -69,6 +69,7 @@ function showSolution() {
             console.log('coop ' + coop);
             console.log(emails);
             console.log(address.city);
+
         }
     );
 
